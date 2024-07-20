@@ -5,6 +5,8 @@ export const YOUTUBE_VIDEO_API = 'https://youtube.googleapis.com/youtube/v3/vide
 
 export const YOUTUBE_SEARCH_SUGG='http://suggestqueries.google.com/complete/search?client=firefox&ds=yt&q=';
 
+export const COMMENTS_API = 'https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet%2Creplies&videoId=_VB39Jo8mAQ&key='+API_KEY;
+
 
 
 
