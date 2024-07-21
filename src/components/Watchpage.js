@@ -29,10 +29,7 @@ const Watchpage = () => {
         <Livechat/>
      
         </div>
-        <div>
-       
-        </div>
-        
+        <Comments vid={searchParams.get("v")}/>
         </div>
 
      
@@ -40,3 +37,7 @@ const Watchpage = () => {
 }
 
 export default Watchpage;
+
+// useSearchParams is used to access and manipulate the query parameters in the URL. These are the key-value pairs found after the ? in a URL.
+
+// useParams is used to access URL parameters defined in the route path. These are typically part of the path itself, not the query string.

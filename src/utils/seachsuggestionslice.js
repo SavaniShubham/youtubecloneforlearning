@@ -22,3 +22,20 @@ const searchsuggestionslice= createSlice(
 );
 export default searchsuggestionslice.reducer;
 export const { cacheresult} =  searchsuggestionslice.actions ;
+
+
+//const state = { a: 1, b: 2, c: 3 };
+// const action = { payload: { b: 4, d: 5 } };
+
+// Object.assign(state, action.payload);
+// { a: 1, b: 4, c: 3, d: 5 }
+
+
+// const state = { a: 1, b: 2, c: 3 };
+// const action = { payload: { b: 4, d: 5 } };
+
+// const newState = { ...action.payload, ...state };
+
+// { b: 2, d: 5, a: 1, c: 3 }
+
+

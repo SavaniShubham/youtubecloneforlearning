@@ -57,18 +57,15 @@ const Livechat = () => {
         <div className='  flex justify-center  p-2  border border-black  rounded-b-xl'>
 
             <input className=' w-[340px] pl-3  p-2 rounded-3xl border border-black' value={livechatmsg} placeholder='chat...'
-            onChange={(e)=>setlivechatmsg(e.target.value)}></input>
+            onChange={(e)=>setlivechatmsg(e.target.value)} ></input>
     
         </div>
         </form>
-
-        
-
-       
-     
-       
        </>
   )
 }
 
 export default Livechat;
+
+//e.preventDefault() prevents the default form submission action, which would normally reload the page and submit the form data to the server.
+

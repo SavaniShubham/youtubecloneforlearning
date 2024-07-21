@@ -4,7 +4,7 @@ import Videocard from './Videocard';
 import { Link } from 'react-router-dom';
 
 const Videoconatiner = () => {
-  const [videos , setvideos]= useState();
+  const [videos , setvideos]= useState([]);
   useEffect (()=>
   {
     getvideodata();
@@ -18,7 +18,7 @@ const Videoconatiner = () => {
     setvideos(json.items);
 
   }
-  return (videos && 
+  return (
     <div className=' flex flex-wrap'>
       
       {videos.map((video)=>(   <Link key={video.id} to={"/watch?v="+video.id}><Videocard  info={video}/></Link>))}

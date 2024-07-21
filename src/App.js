@@ -7,6 +7,8 @@ import appstore from './utils/appstore';
 import {createBrowserRouter, RouterProvider} from 'react-router-dom';
 import Maincontainer from './components/Maincontainer';
 import Watchpage from './components/Watchpage';
+import Conceptofusememohook from './components/Conceptofusememohook';
+
 
 
 
@@ -22,6 +24,10 @@ const approuter = createBrowserRouter([
       {
         path:'/watch',
         element:<Watchpage/>
+      },
+      {
+        path:'/conceptofusememohook',
+        element:<Conceptofusememohook/>,
       }
     ]
   },

@@ -74,7 +74,7 @@ const Head = () => {
             <div className=' px-2 absolute bg-white w-[39.5rem] shadow-lg rounded-xl'>
                 <ul>
                     {
-                        suggestion.map((sugg)=> <li  key={sugg} className='py-2 px-3 hover:bg-gray-100 shadow-sm'>{sugg}</li>)
+                        suggestion.map((sugg)=> <li  key={sugg} className='py-2 px-3 hover:bg-gray-100 shadow-sm' onMouseDown={ ()=> setsearchquery(sugg)}>{sugg}</li>)
                     }
                    
                 </ul>
